@@ -11,11 +11,8 @@ body {
  background-color: #59668e;
  background-image:url(immerse.png);
  background-repeat: no-repeat;
- background-position:top;
+ background-position:center top;
  background-size:60%;
- height:100%;
- width:100%;
- position:relative;
  color:#ffa8b6;
  text-align:center;
 
@@ -26,7 +23,7 @@ body {
   font-weight: normal;
   position:absolute;
   top:28em;
-  left:40%;
+  left:39%;
 }
 
 .play{
