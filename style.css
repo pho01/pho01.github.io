@@ -1,4 +1,4 @@
-html body{
+html, body{
   height:100%;
   width:100%;
   margin:0;
@@ -11,7 +11,7 @@ body {
  background-color: #59668e;
  background-image:url(immerse.png);
  background-repeat: no-repeat;
- background-position:center top;
+ background-position:center;
  background-size:60%;
  color:#ffa8b6;
  text-align:center;
@@ -19,11 +19,14 @@ body {
 }
 
 .personal-info{
-  font-family:"Raleway";
-  font-weight: normal;
-  position:absolute;
-  top:28em;
-  left:39%;
+  font-family: "Raleway";
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    margin-top: 100px;
 }
 
 .play{
@@ -63,4 +66,10 @@ li a:hover {
   display: block;
   color: #59668e;
 
+}
+
+@media (max-width: 700px) {
+  body {
+   background-size:600px;
+  }
 }
