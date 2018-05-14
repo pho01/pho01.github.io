@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>works</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body class="works_body">
+
+<div class="intro_paragraph" style="height:30%;">
+
+</div>
+
+<div class="graphic_design">
+  <div class="container cf">
+  <div class="animation-element bounce-up cf">
+    <a href="graphic_design_page.html">
+      <div class="subject" style="background-size:cover;background-image:url(poster.png);background-size:200%;">
+  </div></a>
+            <h6 class="title" style="left:28%;">Graphic Design</h6>
+  </div>
+  </div>
+
+</div>
+
+<div class="illustration">
+  <div class="container cf">
+  <div class="animation-element bounce-up cf">
+    <a href="illustration_page.html"><div class="subject" style="background-image:url(birthdaycard.jpg);background-size:cover;">
+  </div></a>
+  <h6 class="title" style="left:36%;">Illustration</h6>
+  </div>
+  </div>
+
+</div>
+
+<div class="fine_art">
+  <div class="container cf">
+  <div class="animation-element bounce-up cf">
+    <a href="fine_art_page.html">
+      <div class="subject" style="background-image:url(bathroom.jpg);background-size:cover;">
+  </div></a>
+      <h6 class="title" style="left:40%;">Fine Art</h6>
+  </div>
+  </div>
+
+</div>
+
+<a href="index.html">
+<div class="back_to_index" style="height: 60px;width: 60px; background-color: #555;border-radius: 50%;">
+<i class="left" style="transform: rotate(135deg);-webkit-transform: rotate(135deg);"></i>
+</div></a>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+var window_height = $window.height();
+var window_top_position = $window.scrollTop();
+var window_bottom_position = (window_top_position + window_height);
+
+$.each($animation_elements, function() {
+  var $element = $(this);
+  var element_height = $element.outerHeight();
+  var element_top_position = $element.offset().top;
+  var element_bottom_position = (element_top_position + element_height);
+
+  //check to see if this current container is within viewport
+  if ((element_bottom_position >= window_top_position) &&
+    (element_top_position <= window_bottom_position)) {
+    $element.addClass('in-view');
+  } else {
+    $element.removeClass('in-view');
+  }
+});
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+
+$(window).scroll(function () {
+  $('.animation-test').each(function () {
+      var imagePos = $(this).offset().top;
+      var imageHeight = $(this).height();
+      var topOfWindow = $(window).scrollTop();
+
+
+      if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+          $(this).addClass("enemy");
+      } else {
+          $(this).removeClass("enemy");
+      }
+
+  });
+});
+$('.element-to-hide').css('visibility', 'hidden');
+
+
+
+
+
+  </script>
+
+</body>
+
+
+</html>
