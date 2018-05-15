@@ -236,3 +236,79 @@ i {
   top:16pt;
   left:10pt;
 }
+.gd_body{
+  background-color: #59668e;
+}
+.grid-container {
+  background-color: #59668e;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  margin-left:8% ;
+  margin-right:8% ;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.grid-item_1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 30px;
+  text-align: left;
+  position: relative;
+  float:left;
+}
+.grid-item_2{
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  float:left;
+}
+.grid-item_3{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  float:left;
+}
+.grid-item_4{
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  float:left;
+}
+.grid-item_5{
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  float:left;
+}
+.grid-item_6{
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  float:left;
+}
+.grid-item_7{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  float:left;
+}
+.grid-item_8{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  float:left;
+}
+.grid-item_9{
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  float:left;
+}
