@@ -46,8 +46,9 @@ h1{
 
 
 ul.homepage_ul{
+    width:500pt;
+    padding-left: 0;
     list-style-type: none;
-    margin-left: 10pt;
     overflow: hidden;
     background-color: #59668e;
 }
@@ -519,4 +520,26 @@ i {
   text-align: left;
   position: relative;
   float:left;
+}
+
+.dropdown-content{
+  display: none;
+  position:absolute;
+  background-color: #ffaa19;
+  color:#59668e;
+}
+.dropdown-content a{
+   width:inherit;
+   font-size: 10pt;
+   font-weight: normal;
+   text-decoration: underline;
+   display:inline-block;
+   text-align: left;
+}
+.dropdown-content a:hover{
+  color:#ff9000;
+}
+
+.homepage_li:hover .dropdown-content {
+    display:block;
 }
